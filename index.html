@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Make Me Into Art</title>
+<style>
+  html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+    font-family: 'Segoe UI', Arial, sans-serif;
+  }
+
+  body {
+    background: linear-gradient(
+      270deg,
+      #ff0000, #ff9900, #ffff00, #33ff00,
+      #00ffff, #3300ff, #9900ff, #ff0099, #ff0000
+    );
+    background-size: 1600% 1600%;
+    animation: rainbowShift 18s ease infinite;
+  }
+
+  @keyframes rainbowShift {
+    0%   { background-position: 0% 50%; }
+    50%  { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+  }
+
+  .title {
+    position: absolute;
+    top: 24px;
+    left: 24px;
+    font-size: 2.2rem;
+    font-weight: 800;
+    color: #ffffff;
+    text-shadow:
+      2px 2px 0 #000,
+      -2px -2px 0 #000,
+      2px -2px 0 #000,
+      -2px 2px 0 #000;
+    margin: 0;
+  }
+
+  .gif-container {
+    position: absolute;
+    top: 100px;
+    left: 24px;
+  }
+
+</style>
+</head>
+<body>
+
+  <h1 class="title">make me into art</h1>
+
+  <div class="gif-container">
+    <img src="pepe.gif" alt="pepe">
+  </div>
+
+</body>
+</html>
